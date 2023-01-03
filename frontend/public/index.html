@@ -1,0 +1,94 @@
+<html>
+<title>Cartofel.ro</title>
+<link rel="stylesheet" href="assets\css\styles.css">
+
+<head>
+  <!-- Script Iconite -->
+  <script src="https://kit.fontawesome.com/395591ac65.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div id="content">
+    <div id="header">
+      <ul class="lista">
+        <li><a href="#slideshow"><i class="fa-solid fa-house"></i></i>Home</a></li>
+        <li><a href="#form"><i class="fa-solid fa-envelope"></i>Programare</a></li>
+        <li><a href="#location"><i class="fa-regular fa-compass"></i></i>Locatie</a></li>
+      </ul>
+    </div>
+    <!-- Slideshow -->
+    <div class="slideshow" id="slideshow">
+      <div class="mySlides fade">
+        <div id="img1"></div>
+      </div>
+      <div class="mySlides fade">
+        <div id="img2"></div>
+      </div>
+      <div class="mySlides fade">
+        <div id="img3"></div>
+      </div>
+      <!-- Butoanele next/prev -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <!-- Javascript -->
+    <!-- Formular Programare -->
+    <div class="form" id="form">
+      <div class="title">Programare</div>
+      <form id="appointment-form" class="containers">
+
+        <div class="container1">
+          <div class="input-container ic2">
+            <input id="lastname" class="input" type="text" placeholder="Nume" required />
+          </div>
+          <div class="input-container ic2">
+            <input id="email" class="input" type="email" placeholder="Email" required />
+          </div>
+          <div class="input-container ic2">
+            <input class="input" type="datetime-local" id="start" min="2022-01-01T00:00" max="2023-12-31T:23:59"
+              required>
+          </div>
+        </div>
+
+        <div class="container2">
+          <div class="input-container ic2">
+            <input id="firstname" class="input" type="text" placeholder="Prenume" required />
+          </div>
+          <div class="input-container ic2">
+            <input id="phone" class="input" type="number" placeholder="Numar de telefon" required />
+          </div>
+          <button type="submit" class="submit">Trimite</button>
+        </div>
+
+      </form>
+      <script src="assets\js\myscripts.js"></script>
+
+    </div>
+    <!-- Harta-->
+    <div id="location">
+      <div id="adress">
+        <p>Strada Mihai Viteazul 68
+          Brașov 500187</p>
+      </div>
+      <div id="map">
+        <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"></script>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <div id="footer">
+    <ul>
+      <li><i class="fa-regular fa-envelope"></i></li>
+      <li>office@tln.ro</li>
+      <li> <a><i class="fa-solid fa-phone"></i></a> </li>
+      <li>(+40368 40 50 55)</li>
+      <li> <a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+      <li> <a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+      <li> <a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+    </ul>
+  </div>
+</body>
+
+</html>

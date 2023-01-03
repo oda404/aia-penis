@@ -1,0 +1,51 @@
+<html>
+<link rel="stylesheet" href="assets\css\review_styles.css">
+<title>Review Page</title>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/395591ac65.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="div2">
+        <form id="review-form" class="form">
+            <div id="review">
+                <div class="title">Review:</div>
+                <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="5 stars">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="4 stars">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="3 stars">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="2 stars">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="1 star">1 star</label>
+                </div>
+            </div>
+            <div class="containers">
+                <textarea id="review-desc" rows="4" cols="50" class="input"
+                    placeholder="Cum vi s-au parut serviciile noastre?"></textarea>
+                </textarea>
+            </div>
+            <button type="submit" class="submit"><span>Trimite</span></button>
+        </form>
+    </div>
+    <script src="assets/js/review_script.js"></script>
+    <div id="footer">
+        <ul>
+            <li><i class="fa-regular fa-envelope"></i></li>
+            <li>office@tln.ro</li>
+            <li> <a><i class="fa-solid fa-phone"></i></a> </li>
+            <li> (+40368 40 50 55)</li>
+            <li> <a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li> <a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li> <a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
